@@ -55,7 +55,6 @@ class FlappyGrid2(pufferlib.PufferEnv):
     def step(self, actions):
         self.actions[:] = actions
         self.tick += 1
-        # print(f"DEBUG tick: {self.tick}")  # TEMP
         binding.vec_step(self.c_envs)
         
         info = []
