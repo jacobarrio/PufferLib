@@ -40,7 +40,7 @@ void c_reset(FlappyGrid2* env) {
     env->score = 0;
     env->steps = 0;
     
-    // Set initial observation
+    // Initialize observation buffer
     env->observations[0] = env->bird_pos;
     env->observations[1] = env->obstacle_x;
     env->observations[2] = env->obstacle_gap_y;
